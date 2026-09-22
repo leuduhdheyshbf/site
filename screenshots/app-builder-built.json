@@ -1,0 +1,38 @@
+{
+  "url": "http://127.0.0.1:8081/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "LATAM 友 · Formulário de recrutamento",
+      "hasCanvas": false,
+      "bodyTextLen": 2048,
+      "bodyTextHash": "2ac35c9a572a14a01a690a7d3105fb79cfeb3d31919fccc74b485144c3a9c2fd",
+      "bodyTextPrefix": "RECRUTAMENTO ABERTO Formulário de recrutamento Quer fazer parte ",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-built.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "LATAM 友 · Formulário de recrutamento",
+      "hasCanvas": false,
+      "bodyTextLen": 2048,
+      "bodyTextHash": "2ac35c9a572a14a01a690a7d3105fb79cfeb3d31919fccc74b485144c3a9c2fd",
+      "bodyTextPrefix": "RECRUTAMENTO ABERTO Formulário de recrutamento Quer fazer parte ",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-built-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/app-builder-built.json",
+  "divergesFromBaseline": false,
+  "baselineReasons": []
+}
