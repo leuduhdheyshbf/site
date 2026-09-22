@@ -8,7 +8,8 @@ import type { RecruitmentValues } from "@/lib/recruitment";
 
 export const Route = createFileRoute("/candidatura")({ component: Candidatura });
 
-const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbyxYBWoUGq8DVoJdl3CW43O9rOx1f9g73BSbmmKmpM2gIusMF2hDjgUvjG9OSc8KL45/exec";
+const GOOGLE_SCRIPT_URL =
+  "https://script.google.com/macros/s/AKfycbw0ht83Y1DOMCS9woV8iXKK9K94Toy6ohIKSn3WN3WNkvOXcnyCK_bvSPNJcT2ZSSNy/exec";
 
 function Candidatura() {
   const [submitted, setSubmitted] = useState<RecruitmentValues | null>(null);
@@ -20,13 +21,28 @@ function Candidatura() {
     setSubmitError(null);
     
     try {
+      const payload: RecruitmentValues = {
+        nome: values.nome,
+        idade: values.idade,
+        nick: values.nick,
+        idConta: values.idConta,
+        cidadeEstado: values.cidadeEstado,
+        funcao: values.funcao,
+        patenteAtual: values.patenteAtual,
+        experienciaCompetitiva: values.experienciaCompetitiva,
+        experienciaDescricao: values.experienciaDescricao ?? "",
+        tempoDisponivel: values.tempoDisponivel,
+        horarioDisponivel: values.horarioDisponivel,
+      };
+
+      console.log("VALORES ENVIADOS:", payload);
+
       await fetch(GOOGLE_SCRIPT_URL, {
         method: "POST",
-        mode: "no-cors",
         headers: {
-          "Content-Type": "application/json",
+          "Content-Type": "text/plain;charset=utf-8",
         },
-        body: JSON.stringify(values),
+        body: JSON.stringify(payload),
       });
       
       console.log("Form submitted to Google Sheets:", values);
