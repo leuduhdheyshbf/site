@@ -83,19 +83,6 @@ export function Hero() {
         Quer fazer parte da LATAM 友? Preencha com informações verdadeiras. A
         liderança analisa o perfil e entra em contato pelo WhatsApp.
       </motion.p>
-
-      <motion.a 
-        href="#formulario" 
-        className="cta-jump mt-5"
-        variants={textVariants}
-        initial="hidden"
-        animate="visible"
-        custom={4}
-        whileHover={{ scale: 1.05 }}
-        whileTap={{ scale: 0.95 }}
-      >
-        Preencher candidatura
-      </motion.a>
     </header>
   );
 }
