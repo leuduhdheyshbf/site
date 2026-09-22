@@ -3,6 +3,13 @@ import { z } from "zod";
 export const GUILD_NAME = "LATAM";
 export const GUILD_TAGLINE = "Foco total na partida sem ter medo de perder";
 
+export const PILLARS = [
+  { title: "Disciplina", body: "Foco total na partida sem ter medo de perder." },
+  { title: "Equipe", body: "Jogamos juntos, vencemos juntos." },
+  { title: "Evolução", body: "Melhoramos a cada rodada." },
+  { title: "Respeito", body: "Tratamento justo e direto com todos." },
+] as const;
+
 export const FUNCOES = [
   { value: "rush", label: "Rush" },
   { value: "suporte", label: "Suporte" },
